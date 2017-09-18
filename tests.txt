@@ -1,51 +1,52 @@
 # CSC 365 Fall 2017
 # Andy Tan, Liam Gow
-# Lab 1-1 test suite
+# Lab 1-1 Test Suite
 
-# Requirement 4
+# Requirement 4 - Student
+# Student command
 S COOKUS
 Student COOKUS
 
-# Requirement 5
+# Requirement 5 - Student Bus
 S COOKUS B
 Student COOKUS B
 
-# Requirement 6
+# Requirement 6 - Teacher
 T FAFARD
 Teacher FAFARD
 
-# Requirement 7
+# Requirement 7 - Grade
 G 2
 Grade 2
 
-# Requirement 8
+# Requirement 8 - Bus
 B 52
 Bus 52
 
-# Requirement 9 High
+# Requirement 9 - Grade High
 G 2 H
 Grade 2 H
 G 2 High
 Grade 2 High
 
-# Requirement 9 High
+# Requirement 9 - Grade Low
 G 2 L
 Grade 2 L
 G 2 Low
 Grade 2 Low
 
-# Requirement 10
+# Requirement 10 - Average
 A 3
 Average 3
 
-# Requirement 11
+# Requirement 11 - Info
 I
 Info
 
-# E1
+# E1 - Errors
 I 4
 Grade
 Student BLAH 4
 
-# Quit
+# Requirement 12 - Quit
 Q
