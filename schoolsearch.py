@@ -19,6 +19,9 @@ def schoolsearch(path):
         command = input(prompt if do_prompt else "")
         args = command.split(" ")
 
+        # Account for comments in tests
+        if '#' in args:
+            continue
         try:
             opt = args[0][0]
             first = args[1] if len(args) > 1 else None
@@ -26,19 +29,19 @@ def schoolsearch(path):
         except IndexError:
             continue
 
-        if opt in ["S", "Student"]:
+        if opt in ["S", "Student"] and len(args) >= 2 and len(args) < 4:
             functions.student(students, first, second) # second here is being treated as a boolean
-        elif opt in ["T", "Teacher"]:
+        elif opt in ["T", "Teacher"] and len(args) == 2:
             functions.teacher(students, first)
-        elif opt in ["B", "Bus"]:
+        elif opt in ["B", "Bus"] and len(args) == 2:
             functions.bus(students, first)
-        elif opt in ["G", "Grade"]:
+        elif opt in ["G", "Grade"] and len(args) >= 2 and len(args) < 4:
             functions.grade(students, first, True if second in ["H", "High"] else False, True if second in ["L", "Low"] else False)
-        elif opt in ["A", "Average"]:
+        elif opt in ["A", "Average"] and len(args) == 2:
             functions.average(students, first)
-        elif opt in ["I", "Info"]:
+        elif opt in ["I", "Info"] and len(args) == 1:
             functions.info(students)
-        elif opt in ["Q", "Quit"]:
+        elif opt in ["Q", "Quit"] and len(args) == 1:
             return 0
         else:
             print("Invalid command")
