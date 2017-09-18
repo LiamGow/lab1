@@ -2,7 +2,6 @@
 CSC 365 Lab 1
 
 ## Testing
-```
 Test cases are held in:
 ```angular2html
 test.txt
