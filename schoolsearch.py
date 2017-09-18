@@ -24,19 +24,19 @@ def schoolsearch(path):
         except IndexError:
             continue
 
-        if opt == "S":
-            functions.student(students, first, second)
-        elif opt == "T":
+        if opt in ["S", "Student"]:
+            functions.student(students, first, second) # second here is being treated as a boolean
+        elif opt in ["T", "Teacher"]:
             functions.teacher(students, first)
-        elif opt == "B":
+        elif opt in ["B", "Bus"]:
             functions.bus(students, first)
-        elif opt == "G":
+        elif opt in ["G", "Grade"]:
             functions.grade(students, first, True if second in ["H", "High"] else False, True if second in ["L", "Low"] else False)
-        elif opt == "A":
+        elif opt in ["A", "Average"]:
             functions.average(students, first)
-        elif opt == "I":
+        elif opt in ["I", "Info"]:
             functions.info(students)
-        elif opt == "Q":
+        elif opt in ["Q", "Quit"]:
             return 0
         else:
             print("Invalid command")
