@@ -2,6 +2,8 @@ import functions
 import parse
 
 def schoolsearch(path):
+    do_prompt = False
+
     prompt = "S[tudent]: <lastname> [B[us]]\n" \
              "T[eacher]: <lastname>\n" \
              "B[us]: <number>\n" \
@@ -14,7 +16,7 @@ def schoolsearch(path):
     students = parse.parse(path)
 
     while(True):
-        command = input(prompt)
+        command = input(prompt if do_prompt else "")
         args = command.split(" ")
 
         try:
