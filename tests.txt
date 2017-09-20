@@ -3,50 +3,113 @@
 # Lab 1-1 Test Suite
 
 # Requirement 4 - Student
-# Student command
-S COOKUS
-Student COOKUS
+# expected output (each):
+# COOKUS, XUAN - GRADE: 3, TEACHER: FAFARD
+
+S: COOKUS
+Student: COOKUS
 
 # Requirement 5 - Student Bus
-S COOKUS B
-Student COOKUS B
+# expected output (each):
+# COOKUS, XUAN - BUS: 52
+
+S: COOKUS B
+Student: COOKUS B
 
 # Requirement 6 - Teacher
-T FAFARD
-Teacher FAFARD
+# expected output (each):
+# COOKUS, XUAN
+# ELHADDAD, SHANTE
+# SWEDLUND, SHARRI
+# CIGANEK, MANIE
+# COVINGTON, TOMAS
+# EARLY, TORY
+# LINHART, LELA
+
+T: FAFARD
+Teacher: FAFARD
 
 # Requirement 7 - Grade
-G 2
-Grade 2
+# expected output (each):
+# WOOLERY, NOLAN
+# VILARDO, EMMANUEL
+# LIBRANDI, TODD
+# HAVIR, BOBBIE
+# SARAO, DIEDRA
+# VANCOTT, MIKE
+# WICINSKY, TERESE
+# KOZOLA, BUSTER
+# MULLINGS, LEIGHANN
+# BUSSMANN, BILLY
+# BERBES, DICK
+# MULGREW, RANDELL
+# TOWLEY, LANE
+
+G: 2
+Grade: 2
 
 # Requirement 8 - Bus
-B 52
-Bus 52
+# expected output (each):
+# XUAN COOKUS - GRADE: 3, CLASSROOM: 107
+# SHANTE ELHADDAD - GRADE: 3, CLASSROOM: 107
+# DEVIN IMMERMAN - GRADE: 4, CLASSROOM: 105
+# STAN OBREIN - GRADE: 6, CLASSROOM: 111
+# DIMPLE CORONADO - GRADE: 6, CLASSROOM: 102
+# DIEDRA SARAO - GRADE: 2, CLASSROOM: 108
+# TORY EARLY - GRADE: 3, CLASSROOM: 107
+# ROSETTA KEMERER - GRADE: 6, CLASSROOM: 102
+
+B: 52
+Bus: 52
 
 # Requirement 9 - Grade High
-G 2 H
-Grade 2 H
-G 2 High
-Grade 2 High
+# expected output (each):
+# TERESE - GPA: 3.22, TEACHER: HAMER, BUS: 53
+
+G: 2 H
+Grade: 2 H
+G: 2 High
+Grade: 2 High
 
 # Requirement 9 - Grade Low
-G 2 L
-Grade 2 L
-G 2 Low
-Grade 2 Low
+# expected output (each):
+# BUSTER - GPA: 2.76, TEACHER: HAMER, BUS: 55
+
+G: 2 L
+Grade: 2 L
+G: 2 Low
+Grade: 2 Low
 
 # Requirement 10 - Average
-A 3
-Average 3
+# expected output (each):
+# 9 STUDENTS, AVERAGE GPA: 3.048888888888889
+
+A: 3
+Average: 3
 
 # Requirement 11 - Info
+# expected output (each):
+# 0: 0
+# 1: 2
+# 2: 13
+# 3: 9
+# 4: 15
+# 5: 0
+# 6: 21
+
 I
 Info
 
 # E1 - Errors
-I 4
+# expected output (each):
+# Invalid command
+
+I: 4
 Grade
-Student BLAH 4
+Student: COOKUS 4
 
 # Requirement 12 - Quit
+# expected output (each):
+# EOF
+
 Q

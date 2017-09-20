@@ -1,3 +1,6 @@
+# CSC 365 Fall 2017
+# Andy Tan, Liam Gow, Chris Scarborough
+
 import functions
 import parse
 
@@ -16,7 +19,7 @@ def schoolsearch(path):
     students = parse.parse(path)
 
     while(True):
-        command = input(prompt if do_prompt else "")
+        command = input(prompt if do_prompt else "").replace(":", "")
         args = command.split(" ")
 
         # Account for comments in tests
@@ -29,7 +32,7 @@ def schoolsearch(path):
         except IndexError:
             continue
 
-        if opt in ["S", "Student"] and len(args) >= 2 and len(args) < 4:
+        if opt in ["S", "Student"] and len(args) >= 2 and len(args) < 4 and second in [None, "B", "Bus"]:
             functions.student(students, first, second) # second here is being treated as a boolean
         elif opt in ["T", "Teacher"] and len(args) == 2:
             functions.teacher(students, first)

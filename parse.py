@@ -1,3 +1,6 @@
+# CSC 365 Fall 2017
+# Andy Tan, Liam Gow, Chris Scarborough
+
 def parse(path):
     try:
         with open(path, 'r') as csv:

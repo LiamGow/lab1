@@ -1,3 +1,6 @@
+# CSC 365 Fall 2017
+# Andy Tan, Liam Gow, Chris Scarborough
+
 def student(students, lastname, bus=False):
     for s in students:
         if s['StLastName'] == lastname:
