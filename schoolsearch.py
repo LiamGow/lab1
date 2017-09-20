@@ -32,13 +32,13 @@ def schoolsearch(path):
         except IndexError:
             continue
 
-        if opt in ["S", "Student"] and len(args) >= 2 and len(args) < 4 and second in [None, "B", "Bus"]:
+        if opt in ["S", "Student"] and 2 <= len(args) < 4 and second in [None, "B", "Bus"]:
             functions.student(students, first, second) # second here is being treated as a boolean
         elif opt in ["T", "Teacher"] and len(args) == 2:
             functions.teacher(students, first)
         elif opt in ["B", "Bus"] and len(args) == 2:
             functions.bus(students, first)
-        elif opt in ["G", "Grade"] and len(args) >= 2 and len(args) < 4:
+        elif opt in ["G", "Grade"] and 2 <= len(args) < 4:
             functions.grade(students, first, True if second in ["H", "High"] else False, True if second in ["L", "Low"] else False)
         elif opt in ["A", "Average"] and len(args) == 2:
             functions.average(students, first)
